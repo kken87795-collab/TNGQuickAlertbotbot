@@ -1,10 +1,9 @@
-name: Build TNGQuickAlert
-
+- 'TNGQuickAlert-project-fixed.zip'
 on:
   workflow_dispatch:
   push:
     paths:
-      - 'TNGQuickAlert-project.zip'
+      - run: unzip -q TNGQuickAlert-project-fixed.zip
       - '.github/workflows/build.yml'
 
 jobs:
